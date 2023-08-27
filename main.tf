@@ -57,4 +57,3 @@ resource "aws_rds_cluster" "example" {
     { Name = "${var.env}-rds" }
   )
 }
-RDS Serv
