@@ -41,7 +41,7 @@ resource "aws_rds_cluster" "example" {
   engine                    =  var.engine
   engine_version            =  var.engine_version
 #  storage_type              = "io1"
-  allocated_storage         = 20
+  allocated_storage         = 30
 #  iops                      = 1000
   master_username           = data.aws_ssm_parameter.DB_ADMIN_USER.value
   master_password           = data.aws_ssm_parameter.DB_ADMIN_PASS.value
