@@ -41,7 +41,7 @@ resource "aws_rds_cluster" "rds" {
   engine                    =  var.engine
   engine_version            =  var.engine_version
   db_cluster_instance_class = var.instance_class
-  storage_type              = "io1"
+#  storage_type              = "io1"
   allocated_storage         = 20
 #  iops                      = 1000
   master_username           = data.aws_ssm_parameter.DB_ADMIN_USER.value
