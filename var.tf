@@ -6,4 +6,3 @@ variable "engine_version" {}
 variable "number_of_instances" {}
 variable "instance_class" {}
 variable "engine" {}
-variable "availability_zone" {}
