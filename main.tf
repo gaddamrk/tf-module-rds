@@ -1,6 +1,8 @@
 resource "aws_db_subnet_group" "default" {
   name       = "${var.env}-rds-subnet-group"
   subnet_ids =  var.subnet_ids
+  availability_zone = each.value.availability_zone
+
 
 
   tags       = merge(
